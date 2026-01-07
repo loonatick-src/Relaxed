@@ -142,6 +142,10 @@ fmadd   s0, s0, s1, s2
 ret
 ```
 
+## Wishlist/Near-Term Future Work
+1. Support for `+=`, `-=`, `*=`
+2. Rewrite references to operators, e.g. `array.reduce(0, +)` to `array.reduce(0, Relaxed.sum)` 
+
 ## License
 
 3-Clause BSD License
