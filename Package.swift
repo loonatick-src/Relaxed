@@ -34,6 +34,11 @@ let package = Package(
                 .product(name: "RealModule", package: "swift-numerics"),
             ]
         ),
+        // Example executable
+        .executableTarget(
+            name: "RelaxedExample",
+            dependencies: ["Relaxed"]
+        ),
         .testTarget(
             name: "RelaxedTests",
             dependencies: [
